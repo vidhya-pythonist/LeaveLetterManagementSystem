@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leave Letter Management System</title>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Leave Letter Management System</h1>
+    <br>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>From Details:</legend>
+            <label for="eyname">Name:</label>
+            <input type="text" id="eyname" name="eyname" required>
+            <br><br>
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">--Select Class--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <br><br>
+            <label for="section">Section:</label>
+            <select id="section" name="section" required>
+                <option value="">--Select Section--</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+            </select>
+            <br><br>
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>To Details:</legend>
+            <label for="choose">Choose:</label>
+            <select id="choose" name="choose" required>
+                <option value="">--Select Recipient--</option>
+                <option value="The Head Master">The Head Master</option>
+                <option value="The Class Teacher">The Class Teacher</option>
+                <option value="The Officer">The Officer</option>
+            </select>
+            <br><br>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+                <option value="request application for leave due to fever">request application for due to fever</option>
+                <option value="application for leave letter to principal">application for leave letter to principal</option>
+                <option value="application for leave due to function">application for leave due to function </option>
+                <option value="leave application for personal reason">leave application for personal reason </option>
+                <option value="leave application for complain letter">leave application for complain letter</option>
+                <option value="leave application for stomach pain">leave application for stomach pain</option>
+                <option value="leave application for head pain">leave application for head pain</option>
+            </select>
+            <br>
+            <label for="leave">Number of days leave:</label>
+            <input type="number" name="leave" id="leave" min="1">
+            <br> 
+            <input type="checkbox" name="pdf">Download as PDF<br>
+            <br>
+
+
+
+            <form action="/save-details" method="POST">
+                <!-- form inputs -->
+                <button type="submit">Save</button>
+            </form>
+            
+            
+
+
+            &emsp;&emsp;&emsp;&emsp;
+            <button type="button">Download</button>
+            &emsp;&emsp
